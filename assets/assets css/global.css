@@ -1,86 +1,24 @@
-*{
-    font-family: 'Architects Daughter', cursive;
+* {
     font-family: 'Roboto', sans-serif;
-    margin: 0px;
-    padding: 0px;
-}
-@media screen and (min-width: 380px) {
-    .pokemons {
-        grid-template-columns: 1fr 1fr;
-    }
+    box-sizing: border-box;
 }
 
-@media screen and (min-width: 576px) {
-    .pokemons {
-        grid-template-columns: 1fr 1fr 1fr;
-    }
+body {
+    background-color: #f6f8fc;
+}
+
+.content {
+    width: 100vw;
+    height: 100vh;
+    padding: 1rem;
+    background-color: #fff;
 }
 
 @media screen and (min-width: 992px) {
-    .pokemons {
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+    .content {
+        max-width: 992px;
+        height: auto;
+        margin: 1rem auto;
+        border-radius: 1rem;
     }
-}
-body{
-    background-color: #f6f8fc;
-}
-section{
-    margin: 20px;
-    border: solid rgba(0, 0, 0, 0.521) 1px;
-    box-shadow: 2px 2px 0px;
-}
-.content{
-    padding: 1rem;
-    border-radius: 10px;
-}
-h1{
-    font-size: 50px;
-    
-}
-.pokemons{
-    font-size: 16px;
-    list-style: none;
-    color: darkblue;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-.pokemon{
-    color: white;
-    margin: .5rem;
-    padding: 1rem;
-    background-color: #49d0b0;
-    border-radius: 10px;
-    box-shadow: 1px 1px 0px;
-    
-}
-.pokemon img{
-    height: 130px;
-    max-width: 100%;
-    flex-direction: row;
-    margin-top: 0px;
-}
-.pokemon, .type{
-    font-weight: bolder;
-    text-align: justify;
-}
- span.number{
-    color: #1d6352;
-    text-align: right;
-}
-span.name{
-    text-align: center;
-}
-.type{
-    list-style: none;
-    padding: 5px;
-}
-.types .type{
-    margin: 0px;
-    padding: 2px;
-    background-color: #a8f3e1;
-    color: #1d6352;
-    border-radius: 7px;
-    width: 7vw;
-    align-items: center;
-    font-size: 10px;
 }
